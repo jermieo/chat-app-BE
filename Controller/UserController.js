@@ -136,13 +136,13 @@ export const getAllUsers = async (req, res, next) => {
 export const logOut = async (req, res, next) => {
   try {
     if (!req.params.id) {
-      return res.json({ msg: "User id is required " });
+      return res.json({ msg: "User id is  required " });
     }
     onlineUsers.delete(req.params.id);
     return res.status(200).send();
   } catch (error) {
     res.json({
-      error: "Logout failed , Logout internal error",
+      error: "Logout failed , Logout internal  error",
       status: false,
     });
   }
