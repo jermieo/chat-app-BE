@@ -31,7 +31,8 @@ server.listen(port, () => {
 const io = new SocketIO(server, {
   transports: ["websocket", "polling"],
   cors: {
-    origin: "http://localhost:4000",
+    // origin: "http://localhost:4000",
+    origin: "https://chat-app-be-szru.onrender.com",
     credentials: true,
   },
 });
