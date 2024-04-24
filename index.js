@@ -32,7 +32,7 @@ const io = new SocketIO(server, {
   transports: ["websocket", "polling"],
   cors: {
     // origin: "http://localhost:4000",
-    origin: "https://chat-app-be-szru.onrender.com",
+    origin: "https://chat-app-rx.netlify.app",
     credentials: true,
   },
 });
